@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Select your plan</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">
+            <p class="radio_container">
+                <input class="item__radio" type="radio" name="license" value="13">
+                <span class="checkmark"></span>
+                <label for="license1">License plan <span class="item__plan">#1</span></label>
+            </p>
+            <p class="item__price">$<span>13</span> per license</p>
+        </div>
+        <div class="item">
+            <p class="radio_container">
+                <input class="item__radio" type="radio" name="license" value="22">
+                <span class="checkmark"></span>
+                <label for="license2">License plan <span class="item__plan">#2</span></label>
+            </p>
+            <p class="item__price">$<span>22</span> per license</p>
+        </div>
+        <div class="item">
+            <p class="radio_container">
+                <input class="item__radio" type="radio" name="license" value="34">
+                <span class="checkmark"></span>
+                <label for="license3">License plan <span class="item__plan">#3</span></label>
+            </p>
+            <p class="item__price">$<span>34</span> per license</p>
+        </div>
+
+
+        <div class="license__cnt-wrapper">
+            <p class="license__cnt">Number of licenses:</p>
+            <select id="license__cnt-list">
+                </select>
+        </div>
+
+        <p class="license__total">
+            Total: <span id="total_result">$0<span class="us">US</span></span>
+        </p>
+
+        <button class="license__btn">Buy now</button>
+
+        <p class="license__selected ">
+            Selected plan:
+            <span id="license__plan"></span>
+        </p>
+    </div>
+
+    <script src="radio.js"></script>
+</body>
+
+</html>
